@@ -1,0 +1,98 @@
+.Heading {
+    background-color: lightgreen;
+    color: white;
+    width: 20%;
+    height: 10%;
+    margin: auto;
+    padding-top: 1px;
+    border-radius: 20px;
+}
+.Heading h1 {
+    text-align: center;
+}
+.Display {
+    list-style-type: none;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+}
+.Display > li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+.DispProd {
+    border: 2px solid black;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+}
+.DispProd table {
+    margin: 0 5% 0 5%;
+}
+.DispProd h2 {
+    text-align: center;
+}
+.name {
+    width: 70%;
+}
+.quantity {
+    width: 10%;
+    text-align: center;
+}
+.price {
+    width: 10%;
+    text-align: center;
+}
+.Order {
+    border: 2px solid black;
+    margin: auto;
+    width: 90%;
+    height: 6%;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.DispOrder {
+    border: 2px solid black;
+    margin: auto;
+    width: 97.2%;
+    height: 74.5%;
+    border-top: none;
+}
+.Ordername {
+    width: 70%;
+}
+.Orderquantity {
+    width: 10%;
+    text-align: center;
+}
+.Orderprice {
+    width: 10%;
+    text-align: center;
+}
+.reset {
+    border: 2px solid black;
+    margin: auto;
+    width: 97.2%;
+    height: 15%;
+}
+.reset h2 {
+    padding-left: 400px;
+}
+.reset button {
+    position: absolute;
+    left: 91.5%;
+    top: 90%;
+}
+.SignOut {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.SignOut:hover {
+    background-color: #111111;
+}

@@ -1,0 +1,141 @@
+#SignIn {
+    background-color: lightgreen;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    height: 15%;
+    border-radius: 20px;
+}
+#SignIn h2 {
+    text-align: center;
+}
+#SignIn p {
+    text-align: center;
+}
+body {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#form {
+    width: 50%;
+    position: relative;
+    height: 150px;
+}
+.un {
+    width: 50%;
+    position: relative;
+    height: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+.un input {
+    width: 100%;
+    height: 75%;
+    color: rgb(0, 140, 255);
+    padding-top: 30px;
+    padding-left: 1px;
+    border: none;
+    outline: none;
+}
+.un label {
+    position: absolute;
+    bottom: 14px;
+    left: 0px;
+    width: 100%;
+    height: 75%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.un label::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(0, 140, 255);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.un input:focus + .label-name .content-name,
+.un input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: rgb(0, 140, 255);
+}
+.un input:focus + .label-name::after {
+    transform: translateX(0%);
+}
+.ps {
+    width: 50%;
+    position: relative;
+    height: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+.ps input {
+    width: 100%;
+    height: 75%;
+    color: rgb(0, 140, 255);
+    padding-top: 30px;
+    padding-left: 1px;
+    border: none;
+    outline: none;
+}
+.ps label {
+    position: absolute;
+    bottom: 14px;
+    left: 0px;
+    width: 100%;
+    height: 75%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.ps label::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(0, 140, 255);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.content-name2 {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.ps input:focus + .label-name2 .content-name2,
+.ps input:valid + .label-name2 .content-name2 {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: rgb(0, 140, 255);
+}
+.ps input:focus + .label-name2::after {
+    transform: translateX(0%);
+}
+button {
+    background-color: lightgreen;
+    color:  white;
+}
+.view {
+    position: absolute;
+    bottom: 7%;
+    left: 59%;
+}
+.view + label {
+    position: relative;
+    left: 62%;
+}

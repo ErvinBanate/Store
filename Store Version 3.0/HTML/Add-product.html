@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script src="http://Localhost:8080/jquery-3.5.0.js"></script>
+        <script src="http://Localhost:8080/Add-Database.js"></script>
+        <script src="http://Localhost:8080/Display.js"></script>
+        <link rel="stylesheet" href="http://Localhost:8080/Navigation.css">
+        <link rel="stylesheet" href="http://Localhost:8080/Add-product.css">    
+    </head>
+    <body>
+        <div class="Heading">
+            <h2>Admin</h2>
+        </div>
+        
+        <ul class="Navigate">
+            <li>
+                <a class="now">Add Product</a>
+            </li>
+            <li>
+                <a href="http://Localhost:8080/Admin/Remove-Product">Remove Product</a>
+            </li>
+            <li>
+                <a href="http://Localhost:8080">Sign Out</a>
+            </li>
+        </ul>
+
+        <div class="AddProd">
+            <div class="newStock">
+                <h2>Add Stock</h2>
+                <input type="text" id="addKey" list="list" placeholder="Enter Product Name...">
+                <datalist id="list"></datalist>
+                <input type="number" id="addQuantity" min="1" placeholder="Quantity...">
+                <button type="button" id="addStock">Add Stock</button>
+            </div>
+
+            <div class="newProduct">
+                <h2>New Product</h2>
+                <input type="text" id="newKey"  placeholder="Enter Product Name...">
+                <input type="number" id="newQuantity" min="1" placeholder="Quantity...">
+                <input type="number" id="newPrice" min="1" placeholder="Price...">
+                <button type="button" id="newProduct">Add Product</button>
+            </div>
+
+            <div class="newPrice">
+                <h2>Change Price</h2>
+                <input type="text" id="changeKey" list="list" placeholder="Enter Product Name...">
+                <datalist id="list"></datalist>
+                <input type="number" min="1" id="changePrice" placeholder="Price...">
+                <button type="button" id="priceChange">Change Price</button>
+            </div>
+        </div> 
+
+        <div class="DispProd">
+            <h2>Product Stock</h2>
+            <div id="ProdStock">
+                <table class="Table">
+                    <thead>
+                        <th class="name">Product Name</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="price">Price</th>
+                    </thead>
+                    <tbody id="Products"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

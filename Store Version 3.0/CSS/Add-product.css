@@ -1,0 +1,65 @@
+.AddProd {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+.AddProd > div {
+    display: block;
+    float: left;
+    width: 28.7%;
+    margin: 0 1% 2% 1%;
+}
+.newStock {
+    border: 2px solid black;
+    padding: 15px;
+}
+.newStock h2 {
+    text-align: center;
+}
+.newProduct {
+    border: 2px solid black;
+    padding: 15px;
+}
+#newKey {
+    width: 37%;
+}
+.newProduct h2 {
+    text-align: center;
+}
+.newPrice {
+    border: 2px solid black;
+    padding: 15px;
+}
+.newPrice h2 {
+    text-align: center;
+}
+.DispProd {
+    border: 2px solid black;
+    margin: auto;
+    width: 50%;
+    height: 45%;
+    padding: 15px;
+    overflow: auto;
+}
+.Table {
+    width: 100%;
+}
+.DispProd h2 {
+    text-align: center;
+}
+.name {
+    width: 70%;
+}
+.quantity, .price {
+    width: 5%;
+    text-align: left;
+}
+#addQuantity {
+    width: 25%;
+}
+#changePrice {
+    width: 18%;
+}
+#newQuantity, #newPrice {
+    width: 18%;
+}

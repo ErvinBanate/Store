@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script src="http://Localhost:8080/Remove.js"></script>
+        <link rel="stylesheet" href="http://Localhost:8080/Navigation.css">
+        <link rel="stylesheet" href="http://Localhost:8080/Remove-product.css">    
+    </head>
+    <body onload="onload()">
+        <div class="Heading">
+            <h2>Admin</h2>
+        </div>    
+
+        <br>
+        <br>
+        
+        <ul class="Navigate">
+            <li>
+                <a href="http://Localhost:8080/Admin/Add-Product">Add Product</a>
+            </li>
+            <li>
+                <a class="now">Remove Product</a>
+            </li>
+            <li>
+                <a href="http://Localhost:8080">Sign Out</a>
+            </li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+
+        <ul class="RemProd">
+            <li>
+                <div class="stock">
+                    <h2>Remove Stock</h2>
+                    <input type="text" id="removeKey" list="Product" placeholder="Enter Product Name...">
+                    <datalist id="Product"></datalist>
+                    <input type="number" id="removeQuantity" min="1" placeholder="Quantity...">
+                    <button type="button" onclick="removeStock(localStorage)">Remove</button>
+                </div>
+            </li>
+            <li>
+                <div class="product">
+                    <h2>Remove Product</h2>
+                    <input type="text" id="Rkey" list="Product" placeholder="Enter Product Name...">
+                    <datalist id="Product"></datalist>
+                    <button type="button" onclick="removeData(localStorage)">Remove</button>    
+                </div>
+            </li>
+        </ul>
+        
+        <br>
+        <br>
+
+        <div class="DispProd">
+            <h2>Product Stock</h2>
+            <div id="ProdStock">
+                <table class="table">
+                    <thead>
+                        <th class="name">Product Name</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="price">Price</th>
+                    </thead>
+                    <tbody id="Products"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

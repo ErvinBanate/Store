@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script src="../JS/Add.js"></script>
+        <link rel="stylesheet" href="../CSS/Navigation.css">
+        <link rel="stylesheet" href="../CSS/Add-product.css">    
+    </head>
+    <body onload="display(localStorage)">
+        <div class="Heading">
+            <h2>Admin</h2>
+        </div>    
+
+        <br>
+        <br>
+        
+        <ul class="Navigate">
+            <li>
+                <a class="now">Add Product</a>
+            </li>
+            <li>
+                <a href="../HTML/Remove-product.html">Remove Product</a>
+            </li>
+            <li>
+                <a href="../HTML/Sign-In.html">Sign Out</a>
+            </li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+
+        <ul class="AddProd">
+            <li>
+                <div class="newStock">
+                    <h2>Add Stock</h2>
+                    <input type="text" id="addKey" list="Product" placeholder="Enter Product Name...">
+                    <datalist id="Product"></datalist>
+                    <input type="number" id="addQuantity" min="1" placeholder="Quantity...">
+                    <button type="button" onclick="addStock(localStorage)">Add Stock</button>
+                </div>
+            </li>
+            <li>
+                <div class="newProduct">
+                    <h2>New Product</h2>
+                    <input type="text" id="newKey"  placeholder="Enter Product Name...">
+                    <input type="number" id="newQuantity" min="1" placeholder="Quantity...">
+                    <input type="number" id="newPrice" min="1" placeholder="Price...">
+                    <button type="button" onclick="insertData(localStorage)">Add Product</button>
+                </div>
+            </li>
+            <li>
+                <div class="newPrice">
+                    <h2>Change Price</h2>
+                    <input type="text" id="changeKey" list="Product" placeholder="Enter Product Name...">
+                    <datalist id="Product"></datalist>
+                    <input type="number" min="1" id="changePrice" placeholder="Price...">
+                    <button type="button" onclick="newPrice(localStorage)">Change Price</button>
+                </div>
+            </li>
+        </ul> 
+
+        <br>
+        <br>
+
+        <div class="DispProd">
+            <h2>Product Stock</h2>
+            <div id="ProdStock">
+                <table class="Table">
+                    <thead>
+                        <th class="name">Product Name</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="price">Price</th>
+                    </thead>
+                    <tbody id="Products"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

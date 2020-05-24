@@ -1,0 +1,35 @@
+.heading {
+    background-color: lightgreen;
+    color: white;
+    width: 20%;
+    height: 10%;
+    margin: auto;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.heading h2 {
+    text-align: center;
+}
+.Navigate {
+    list-style-type: none;
+    margin: auto;
+    width: 25%;
+    background-color: #333333;
+}
+.Navigate > li {
+    display: block;
+    float: left;
+}
+.Navigate a {
+    padding: 15px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.Navigate a:hover {
+    background-color: #111111;
+}
+.Navigate .now:hover {
+    background-color: #333333;
+}

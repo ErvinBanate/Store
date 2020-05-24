@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script src="http://Localhost:8080/jquery-3.5.0.js"></script>
+        <script src="http://Localhost:8080/Remove-Database.js"></script>
+        <script src="http://Localhost:8080/Admin-Display.js"></script>
+        <link rel="stylesheet" href="http://Localhost:8080/Navigation.css">
+        <link rel="stylesheet" href="http://Localhost:8080/Remove-product.css">    
+    </head>
+    <body>
+        <div class="Heading">
+            <h2>Admin</h2>
+        </div>    
+        
+        <ul class="Navigate">
+            <li>
+                <a href="http://Localhost:8080/Admin/Add-Product">Add Product</a>
+            </li>
+            <li>
+                <a class="now">Remove Product</a>
+            </li>
+            <li>
+                <a href="http://Localhost:8080">Sign Out</a>
+            </li>
+        </ul>
+
+        <div class="RemProd">
+                <div class="stock">
+                    <h2>Remove Stock</h2>
+                    <input type="text" id="removeKey" list="list" placeholder="Enter Product Name...">
+                    <datalist id="list"></datalist>
+                    <input type="number" id="removeQuantity" min="1" placeholder="Quantity...">
+                    <button type="button" id="removeStock">Remove</button>
+                </div>
+                <div class="product">
+                    <h2>Remove Product</h2>
+                    <input type="text" id="rKey" list="list" placeholder="Enter Product Name...">
+                    <datalist id="list"></datalist>
+                    <button type="button" id="removeProduct">Remove</button>    
+                </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div class="DispProd">
+            <h2>Product Stock</h2>
+            <div id="ProdStock">
+                <table class="table">
+                    <thead>
+                        <th class="name">Product Name</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="price">Price</th>
+                    </thead>
+                    <tbody id="Products"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

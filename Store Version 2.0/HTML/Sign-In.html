@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://Localhost:8080/Sign-In.css">
+        <script src="http://Localhost:8080/authenticate.js"></script>
+        <script src="http://Localhost:8080/jquery-3.5.0.js"></script>
+        <script>
+            $(document).ready(() => {
+                let user, pass;
+                $("#submit").click(() => {
+                    user = $("#username").val();
+                    pass = $("#password").val();
+                    $.ajax({
+                        url: "/login",
+                        method: "POST",
+                        data: {user: user, pass: pass},
+                        dataType: 'text'
+                    }).done((data) => {
+                        if (data == 'Admin') {
+                            window.location.href = 'http://Localhost:8080/Admin';
+                        }
+                        else if (data == 'Cashier') {
+                            window.location.href = 'http://Localhost:8080/Cashier';
+                        }
+                        else {
+                            alert("Error!!!!");
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="SignIn">
+            <h2>PRODUCT CHECKER</h2>
+            <p>SIGN- IN</p>
+        </div>
+        <div id="form">
+            <div class="un">
+                <input type="text" id="username" autocomplete="off">
+                <label for="user" class="label-name">
+                    <span class="content-name">Username</span>
+                </label>     
+            </div>
+
+            <div class="ps">
+                <input type="password" id="password">
+                <label for="pass" class="label-name2">
+                    <span class="content-name2">Password</span>
+                </label>
+            </div>
+            <input type="checkbox" class="view" onclick="viewPassword()">
+            <label for="view">Show Password</label>
+        </div>
+        <input type="button" id="submit" value="Log-In">
+    </body>
+</html>

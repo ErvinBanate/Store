@@ -1,0 +1,50 @@
+.DispProd {
+    border: 2px solid black;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+.DispProd h2 {
+    text-align: center;
+}
+.table {
+    width: 100%;
+}
+.name {
+    width: 80%;
+}
+.quantity, .price {
+    width: 5%;
+}
+.RemProd {
+    margin: auto;
+    width: 50%;
+    height: 15%;
+    padding: 10px;
+    list-style: none;
+}
+.RemProd > li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+.RemProd h2 {
+    text-align: center;
+}
+.stock {
+    border: 2px solid black;
+    width: 85%;
+    height: 100%;
+    padding: 15px;
+    margin: auto;
+}
+#removeQuantity {
+    width: 25%;
+}
+.product {
+    border: 2px solid black;
+    width: 85%;
+    height: 100%;
+    padding: 15px;
+    margin: auto;
+}

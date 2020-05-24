@@ -1,0 +1,74 @@
+.AddProd {
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    padding: 10px;
+    list-style: none;
+}
+.AddProd > li {
+    display: block;
+    float: left;
+    width: 33.3%;
+}
+.newStock {
+    border: 2px solid black;
+    width: 75%;
+    height: 100%;
+    padding: 15px;
+    margin: auto;
+}
+.newStock h2 {
+    text-align: center;
+}
+.newProduct {
+    border: 2px solid black;
+    width: 90%;
+    height: 100%;
+    padding: 15px;
+    margin: auto;
+}
+#newKey {
+    width: 37%;
+}
+.newProduct h2 {
+    text-align: center;
+}
+.newPrice {
+    border: 2px solid black;
+    width: 75%;
+    height: 100%;
+    padding: 15px;
+    margin: auto;
+}
+.newPrice h2 {
+    text-align: center;
+}
+.DispProd {
+    border: 2px solid black;
+    margin: auto;
+    width: 50%;
+    height: 45%;
+    padding: 15px;
+}
+.Table {
+    width: 100%;
+}
+.DispProd h2 {
+    text-align: center;
+}
+.name {
+    width: 70%;
+}
+.quantity, .price {
+    width: 5%;
+    text-align: left;
+}
+#addQuantity {
+    width: 25%;
+}
+#changePrice {
+    width: 18%;
+}
+#newQuantity, #newPrice {
+    width: 18%;
+}

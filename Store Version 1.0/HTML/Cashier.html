@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="../JS/CashierOnload.js"></script>
+        <script src="../JS/CashierOnclick.js"></script>
+        <link rel="stylesheet" href="../CSS/Cashier.css">
+    </head>
+
+    <body onload="display()">
+        <div class="Heading">
+            <h1>Cashier</h1>
+        </div>
+
+        <br>
+        <br>
+
+        <ul class="Display">
+            <li>
+                <div class="DispProd">
+                    <h2>Product Stock</h2>
+                    <table  class="ProdStock">
+                        <thead>
+                            <tr>
+                                <th class="name";>Product Name</th>
+                                <th class="quantity";>Quantity</th>
+                                <th class="price">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="storestock">
+                        </tbody>
+                    </table>
+                </div>
+            </li>   
+            <li>
+                <div class="Order">
+                    <input type="text" id="CInpKey" list="Product" placeholder="Enter Product Name...">
+                    <datalist id="Product"></datalist>
+                    <input type="number" id="CInpVal" min="1" placeholder="Enter No. of Order...">
+                    <button type="button" onclick="placeOrder()">Place Order</button>
+                </div>
+                <div class="DispOrder">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="Ordername";>Product Name</th>
+                                <th class="Orderquantity";>Quantity Order</th>
+                                <th class="Orderprice">Order Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="Orders">
+    
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="reset">
+                    <h2 id="Total"></h2>
+                    <button type="button" onclick="resetButton()">Reset</button>
+                </div>
+            </li>
+        </ul>
+
+        <a class="SignOut" href="http://Localhost:8080">Sign Out</a>
+    </body>
+</html>
